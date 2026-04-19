@@ -2,7 +2,7 @@
 
 # MR-LiDAR: A Multi-Resolution Benchmark for Roadside Perception Diagnostics
 
-[ [Paper](https://ieeexplore.ieee.org/abstract/document/11192595) ] | [ [Dataset](URL) ]
+[ [Paper](URL) ] | [ [Dataset](URL) ]
 
 </div>
 
@@ -169,11 +169,19 @@ Each sequence contains:
 
 
 ---
-
-
 ## 📜 Citation
 
 If you find MR-LiDAR useful in your research, please cite:
+```bibtex
+@article{mrlidar2026,
+  title={MR-LiDAR: A Multi-Resolution Roadside LiDAR Benchmark for Perception Diagnostics and Deployment Guidance},
+  author={Cui, Shunlai and Cao, Peng and Zhu, Yuan and He, Yongjiang and Yin, Jiacheng and Huo, Xiao and Cao, Gang and Liu, Xiaobo},
+  journal={Under review},
+  year={2026}
+
+```
+---
+## 📚 Related Research
 ```bibtex
 @ARTICLE{11192595,
   author={Cui, Shunlai and Cao, Peng and Wang, Yiming and Suo, Dajiang and Liu, Xiaobo},
@@ -185,10 +193,9 @@ If you find MR-LiDAR useful in your research, please cite:
   pages={5388-5403},
   keywords={Laser radar;Laser beams;Analytical models;Sensors;Point cloud compression;Mathematical models;Computational modeling;Shape;Laser modes;Accuracy;LiDAR deployment;LiDAR perception performance;vehicle perception;occlusion condition},
   doi={10.1109/TVT.2025.3617472}}
-
 ```
-
 ---
+
 
 ## 🙏 Acknowledgements
 
