@@ -1,12 +1,22 @@
+<div align="center">
+
 # MR-LiDAR: A Multi-Resolution Benchmark for Roadside Perception Diagnostics
 
+[ [Paper](https://ieeexplore.ieee.org/abstract/document/11192595) ] | [ [Dataset](URL) ]
 
+</div>
 
 ---
 
 ## 📌 Overview
 
-**MR-LiDAR** is a controlled multi-resolution roadside LiDAR benchmark designed specifically for **hardware perception diagnostics**. By simultaneously deploying 16-, 32-, 80-, and 128-beam LiDARs within identical geometric scenarios, it enables direct cross-tier comparisons that are impossible with single-sensor datasets.
+**MR-LiDAR** is a first-of-its-kind, controlled multi-resolution roadside LiDAR benchmark specifically designed for **hardware perception diagnostics**. By simultaneously deploying 16, 32, 80, and 128-beam LiDARs within identical geometric scenarios, it enables direct cross-tier comparisons and performance profiling that are fundamentally impossible with single-sensor datasets.
+
+## 🌟 Key Highlights
+
+* **Cross-Tier Hardware Benchmarking:** The first study to provide a side-by-side performance evaluation of 16, 32, 80, and 128-beam LiDARs under perfectly synchronized environmental and geometric conditions.
+* **Perception Boundary Diagnostics:** Provides an in-depth analysis of the geometric collapse phenomenon in roadside sensing, establishing the effective perception range boundaries for road users across different hardware tiers.
+* **Advantage of Non-Uniform Distribution:** Provides critical evidence that beam distribution can be more decisive than beam count, revealing that an 80-beam non-uniform LiDAR can match or even outperform a 128-beam counterpart in mid-to-long-range detection.
 
 <div align="center">
 <img src="./imgs/Figure1-0225-2.png" width="800"/>
@@ -165,12 +175,17 @@ Each sequence contains:
 
 If you find MR-LiDAR useful in your research, please cite:
 ```bibtex
-@article{mrlidar2026,
-  title     = {MR-LiDAR: A Multi-Resolution Benchmark for Roadside Perception Diagnostics},
-  author    = {Author, First A. and Author, Second B. and Author, Third C.},
-  journal   = {IEEE },
-  year      = {2026},
-}
+@ARTICLE{11192595,
+  author={Cui, Shunlai and Cao, Peng and Wang, Yiming and Suo, Dajiang and Liu, Xiaobo},
+  journal={IEEE Transactions on Vehicular Technology}, 
+  title={Analytical Models for Assessing LiDAR Perception Performance for Vehicles With and Without Occlusion}, 
+  year={2026},
+  volume={75},
+  number={4},
+  pages={5388-5403},
+  keywords={Laser radar;Laser beams;Analytical models;Sensors;Point cloud compression;Mathematical models;Computational modeling;Shape;Laser modes;Accuracy;LiDAR deployment;LiDAR perception performance;vehicle perception;occlusion condition},
+  doi={10.1109/TVT.2025.3617472}}
+
 ```
 
 ---
@@ -183,6 +198,14 @@ Annotation was performed using the [SUSTechPOINTS](https://github.com/naurril/SU
 Detection baselines were implemented with [OpenPCDet](https://github.com/open-mmlab/OpenPCDet).
 
 ---
+## ✉️ Contact
+
+If you have any questions, suggestions, or are interested in collaboration, please feel free to contact us:
+
+
+* **Peng Cao** (Corresponding Author): [caopeng@swjtu.edu.cn](mailto:caopeng@swjtu.edu.cn)
+* **Shunlai Cui** : [scui001@odu.edu](mailto:scui001@odu.edu)
+
 
 ## 📄 License
 
