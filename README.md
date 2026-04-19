@@ -17,6 +17,19 @@
 
 ---
 
+## 🔗 Comparison with Existing Datasets
+
+| Dataset | Year | Viewpoint | LiDAR Config | Dynamic Targets | Hardware Hierarchy | Focus |
+|---|---|---|---|---|---|---|
+| KITTI | 2012 | Ego-Vehicle | 1 × 64-beam | ✅ | ❌ | Algorithm Benchmarking |
+| Waymo | 2019 | Ego-Vehicle | 1 × 64-beam | ✅ | ❌ | Large-scale Perception |
+| nuScenes | 2019 | Ego-Vehicle | 1 × 32-beam | ✅ | ❌ | Multimodal Fusion |
+| LIBRE | 2020 | Ego-Vehicle | 10 Types | ❌ (Static) | ✅ | Sensor Comparison |
+| DAIR-V2X-I | 2022 | Roadside | 1 × 300-beam | ✅ | ❌ | Cooperative Perception |
+| TUMTraf | 2023 | Roadside | 1 × 64-beam | ✅ | ❌ | Traffic Flow Analysis |
+| **MR-LiDAR (Ours)** | **2026** | **Roadside** | **16/32/80/128** | ✅ | ✅ | **Hardware Diagnostics** |
+
+---
 ## 🗂️ Dataset Statistics
 
 | Property | Value |
@@ -67,7 +80,7 @@ Data collection was performed on a **200-meter straight road segment** at Southw
 </div>
 
 
-### LiDAR Hardware Specifications
+### LiDAR Specifications
 
 | | RS-LiDAR-16 | RS-Helios-1615 | RS-Ruby-80V | RS-Ruby-Plus |
 |---|---|---|---|---|
@@ -126,61 +139,27 @@ Each sequence contains:
 ## 📊 Benchmark Results
 
 <div align="center">
-<img src="./imgs/Figure1-0225-2.png" width="800"/>
+<img src="./imgs/fig_4-a-0303.png" width="800"/>
+<img src="./imgs/fig_4-b.png" width="800"/>
+<img src="./imgs/fig_4-c.png" width="800"/>
 <br>
-<em>Figure: Geometric Collapse and Degradation in Roadside Perception across LiDAR tiers and distances.</em>
+<em>Figure: Quantitative Evaluation of LiDAR Perception Performance across Distances and Object Classes.</em>
 </div>
 
 
-### Detection Performance Summary (CenterPoint Baseline)
+### Detection Performance Summary 
+<div align="center">
+<img src="./imgs/Table3.png" width="800"/>
+<br>
+<em>Figure: Quantitative LiDAR Diagnostics Benchmark Results.</em>
+</div>
 
-Selected results — see paper for full Table III.
 
-**128-Beam (60–80m range):**
 
-| Class | Recall (%) | Avg IoU (%) | ATE (m) |
-|---|---|---|---|
-| Car | 98.91 | 76.25 | 0.151 |
-| SUV | 99.53 | 82.18 | 0.113 |
-| E-bike | 86.44 | 63.62 | 0.137 |
-| Bicycle | 100.00 | 79.90 | 0.103 |
-
-**80-Beam (60–80m range):**
-
-| Class | Recall (%) | Avg IoU (%) | ATE (m) |
-|---|---|---|---|
-| Car | 89.54 | 65.16 | 0.251 |
-| SUV | 100.00 | 79.67 | 0.131 |
-| **E-bike** | **100.00** | **76.27** | **0.120** |
-| Bicycle | 100.00 | 76.14 | 0.115 |
-
-> 💡 The 80-beam LiDAR **outperforms** the 128-beam on E-bike detection at 60–80m due to non-uniform beam distribution concentrating beams in the road-level zone (-25° to 0°).
-
-**16-Beam (20–40m range):**
-
-| Class | Recall (%) | Avg IoU (%) | ATE (m) |
-|---|---|---|---|
-| Car | 17.27 | 7.32 | 0.767 |
-| SUV | 86.67 | 47.40 | 0.418 |
-| E-bike | — | — | — |
-| Bicycle | — | — | — |
 
 
 ---
 
-## 🔗 Comparison with Existing Datasets
-
-| Dataset | Year | Viewpoint | LiDAR Config | Dynamic Targets | Hardware Hierarchy | Focus |
-|---|---|---|---|---|---|---|
-| KITTI | 2012 | Ego-Vehicle | 1 × 64-beam | ✅ | ❌ | Algorithm Benchmarking |
-| Waymo | 2019 | Ego-Vehicle | 1 × 64-beam | ✅ | ❌ | Large-scale Perception |
-| nuScenes | 2019 | Ego-Vehicle | 1 × 32-beam | ✅ | ❌ | Multimodal Fusion |
-| LIBRE | 2020 | Ego-Vehicle | 10 Types | ❌ (Static) | ✅ | Sensor Comparison |
-| DAIR-V2X-I | 2022 | Roadside | 1 × 300-beam | ✅ | ❌ | Cooperative Perception |
-| TUMTraf | 2023 | Roadside | 1 × 64-beam | ✅ | ❌ | Traffic Flow Analysis |
-| **MR-LiDAR (Ours)** | **2026** | **Roadside** | **16/32/80/128** | ✅ | ✅ | **Hardware Diagnostics** |
-
----
 
 ## 📜 Citation
 
@@ -198,7 +177,7 @@ If you find MR-LiDAR useful in your research, please cite:
 
 ## 🙏 Acknowledgements
 
-This work was supported in part by the **National Natural Science Foundation of China** under Grant No. 52172395.
+This work was supported in part by the National Natural Science Foundation of China under Grant No. 52572362 and 52172395.
 
 Annotation was performed using the [SUSTechPOINTS](https://github.com/naurril/SUSTechPOINTS) platform.
 Detection baselines were implemented with [OpenPCDet](https://github.com/open-mmlab/OpenPCDet).
