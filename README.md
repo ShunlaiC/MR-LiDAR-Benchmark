@@ -2,7 +2,7 @@
 
 # MR-LiDAR: A Multi-Resolution Benchmark for Roadside Perception Diagnostics
 
-[ [Paper](URL) ] | [ [Download Data](https://drive.google.com/drive/folders/1iO_iyeVu9yJgi1hIHoAt5yN9NnhE83jX?usp=sharing) ]
+[ [Paper](URL) ] | [ [Download Data](https://drive.google.com/drive/folders/1iO_iyeVu9yJgi1hIHoAt5yN9NnhE83jX?usp=drive_link) ]
 
 </div>
 
