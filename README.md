@@ -2,7 +2,7 @@
 
 # MR-LiDAR: A Multi-Resolution Benchmark for Roadside Perception Diagnostics
 
-[ [Paper](URL) ] | [ [Download DataData](URL) ]
+[ [Paper](URL) ] | [ [Download Data](URL) ]
 
 </div>
 
@@ -10,7 +10,7 @@
 
 ## 📌 Overview
 
-**MR-LiDAR** is a first-of-its-kind, controlled multi-resolution roadside LiDAR benchmark specifically designed for **hardware perception diagnostics**. By simultaneously deploying 16, 32, 80, and 128-beam LiDARs within identical geometric scenarios, it enables direct cross-tier comparisons and performance profiling that are fundamentally impossible with single-sensor datasets.
+**MR-LiDAR** is a controlled multi-resolution roadside LiDAR benchmark specifically designed for hardware perception diagnostics. By simultaneously deploying 16, 32, 80, and 128-beam LiDARs within identical geometric scenarios, it enables direct cross-tier comparisons and performance profiling that are fundamentally impossible with single-sensor datasets.
 
 ## 🌟 Key Highlights
 
