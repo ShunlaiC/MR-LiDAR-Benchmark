@@ -2,7 +2,7 @@
 
 # MR-LiDAR: A Multi-Resolution Benchmark for Roadside Perception Diagnostics
 
-[ [Paper](URL) ] | [ [Dataset](URL) ]
+[ [Paper](URL) ] | [ [Download DataData](URL) ]
 
 </div>
 
@@ -52,24 +52,13 @@
 | Illumination | Daytime (64.3%) / Nighttime (35.7%) |
 | Occlusion Frames | 2,612 (Car-Occ subset) |
 
-### Frame Distribution by LiDAR
 
-| LiDAR | Beams | Valid Frames |
-|---|---|---|
-| RS-Ruby-Plus | 128 | 3,770 |
-| RS-Ruby-80V | 80 | 3,964 |
-| RS-Helios-1615 | 32 | 1,618 |
-| RS-LiDAR-16 | 16 | 1,145 |
 
-### Object Class Distribution
-
-| Class | Frames | Proportion |
-|---|---|---|
-| Car | 2,842 | 27.1% |
-| Car-Occ | 2,612 | 24.9% |
-| SUV | 2,398 | 22.8% |
-| E-bike | 1,465 | 14.0% |
-| Bicycle | 1,180 | 11.2% |
+<div align="center">
+<img src="./imgs/fig3-0225.png" width="800"/>
+<br>
+<em>Figure: Statistical Distribution of MR-LIDAR Benchmark.</em>
+</div>
 
 ---
 
@@ -115,7 +104,7 @@ MR-LiDAR_Benchmark/
 ├── 20250409-Day/
 │   ├── 128-Beam/
 │   │   ├── Car/
-│   │   │   └── Seq_20250489.../
+│   │   │   └── Seq_20250409.../
 │   │   │       ├── lidar/
 │   │   │       │   ├── 0001.pcd
 │   │   │       │   └── ...
